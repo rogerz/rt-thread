@@ -11,3 +11,8 @@
 *.ilk
 build
 *~
+.files2gtag
+GPATH
+GRTAGS
+GSYMS
+GTAGS
