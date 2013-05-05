@@ -44,7 +44,7 @@ if PLATFORM == 'gcc':
     DEVICE = ' -mcpu=arm926ej-s'
     CFLAGS = DEVICE
     AFLAGS = ' -c' + DEVICE + ' -x assembler-with-cpp' + ' -DTEXT_BASE=' + TextBase
-    LFLAGS = DEVICE + ' -Wl,--gc-sections,-Map=rtthread_at91sam9260.map,-cref,-u,_start -T at91sam9260_ram.ld' + ' -Ttext ' + TextBase
+    LFLAGS = DEVICE + ' -Wl,--gc-sections,-Map=rtthread_at91sam9260.map,-cref,-u,_start -nostartfiles -T at91sam9260_ram.ld' + ' -Ttext ' + TextBase
 
     CPATH = ''
     LPATH = ''

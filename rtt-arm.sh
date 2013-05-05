@@ -1,2 +1,2 @@
 source rtt.sh
-export RTT_EXEC_PATH=/opt/arm-2012.09/bin
+export RTT_EXEC_PATH=~/opt/gcc-arm-none-eabi-4_7-2013q1/bin
